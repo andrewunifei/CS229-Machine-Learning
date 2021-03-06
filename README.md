@@ -1,2 +1,2 @@
 # CS229-Machine-Learning
-Repositório para manter resumo das anotações e atividades realizadas no curso "CS229: Machine Learning" distribuído pela Stanford University. 
+Repository to keep notes taken and activities realized in the course "CS229: Machine Learning" distributed by Stanford University. 
