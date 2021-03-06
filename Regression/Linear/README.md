@@ -4,6 +4,7 @@ Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | 
 
 ### Dependencies 
 [matplotlib](https://github.com/matplotlib/)
+
 [numpy](https://github.com/numpy)
 
 ## Batch Gradient Descent
