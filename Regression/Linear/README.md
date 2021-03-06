@@ -1,4 +1,10 @@
+# Linear Regression
+
 Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, Batch Gradient Descent algorithm and Stochastic Gradient Descent algorithm, two different approach based on gradient descent to calculate linear regression, were implemented and explored using Python.
+
+### Dependencies 
+[matplotlib](https://github.com/matplotlib/)
+[numpy](https://github.com/numpy)
 
 ## Batch Gradient Descent
 The formula used for this first approach was derived from the notes and is the following:
@@ -53,7 +59,7 @@ def stochastic_gradient_descent(self):
 My idea is to explore different implementations of gradient descent. In contrast with the batch one, in this case I chose to update every θj at the same *i-th* iteration, so they are evaluated almost at the same time. The condition defined to stop the iteration was to verify if every steps taken in each calculation of the parameters were less than 0.0001 or if a maximum number 1000 of steps were reached.
 
 ## Visual examples of parameters' calculation and its effect in the linear function
-The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/matplotlib). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of the changes in the linear function. This script is named ```plot2D.py``` in this repository.
+The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of the changes in the linear function. This script is named ```plot2D.py``` in this repository.
 
 ### Batch Gradient Descent
 <p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Resources/batch.gif"></p>
