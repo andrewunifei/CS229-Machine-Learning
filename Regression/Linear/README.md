@@ -60,7 +60,7 @@ def stochastic_gradient_descent(self):
 My idea is to explore different implementations of gradient descent. In contrast with the batch one, in this case I chose to update every θj at the same *i-th* iteration, so they are evaluated almost at the same time. The condition defined to stop the iteration was to verify if every steps taken in each calculation of the parameters were less than 0.0001 or if a maximum number 1000 of steps were reached.
 
 ## Visual examples of parameters' calculation and its effect in the linear function
-The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of the changes in the linear function. This script is named ```plot2D.py``` in this repository.
+The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of changes in the linear function. This script is named ```plot2D.py``` in this repository.
 
 ### Batch Gradient Descent
 <p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Resources/batch.gif"></p>
