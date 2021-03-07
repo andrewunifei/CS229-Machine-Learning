@@ -1,5 +1,5 @@
 # Andrew Enrique Oliveira
-# Ciência da Computação - Universidade Federal de Itajubá (2017 - )
+# Computer Science at Universidade Federal de Itajubá (2017 - )
 # 01/03/2021
 #
 # I wrote this as a learning exercise. The focus is not performance but to explore the concepts around this theme
