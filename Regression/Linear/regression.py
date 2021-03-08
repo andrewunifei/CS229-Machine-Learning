@@ -5,9 +5,10 @@
 # I wrote this as a learning exercise. The focus is not performance but to explore the concepts around this theme
 
 import numpy as np
+from numpy.linalg import inv
 
 class Linear():
-    def __init__(self, raw_X, y, learning_rate):
+    def __init__(self, raw_X, y, learning_rate=0.00001):
         '''
         Constructor takes
         raw_X as a list of features,
@@ -77,6 +78,15 @@ class Linear():
                 if all(abs(steps[i]) < 0.0001 for i in range(len(steps))):
                     FLAG = 0
                 NUM_STEPS -=1
+
+    def normal_equation(self):
+        '''
+        Function that utilizes the method of to evaluate the parameters (otherwise known as weights) of a linear function
+        '''
+        y = self.y[:, np.newaxis]
+        a = self.X.T@self.X
+        self.retrieved_thetas.append(((inv(a)@self.X.T@y).flatten())) # THERE'S A PROBLEM HERE: THETAS ARE BEING STORED PERMANENTLY
+
 
 if __name__ == '__main__':
     exit()
