@@ -83,7 +83,7 @@ class Linear():
         '''
         Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function
         '''
-        # This method instantly find the appropriated values of theta by setting ∇J(θ)=0
+        # This method instantly finds the appropriated values of theta by setting ∇J(θ)=0
 
         y = self.y[:, np.newaxis]
         a = self.X.T@self.X
