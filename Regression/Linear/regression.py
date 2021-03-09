@@ -81,8 +81,10 @@ class Linear():
 
     def normal_equation(self):
         '''
-        Function that utilizes the method of to evaluate the parameters (otherwise known as weights) of a linear function
+        Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function
         '''
+        # This method instantly find the appropriated values of theta by setting ∇J(θ)=0
+
         y = self.y[:, np.newaxis]
         a = self.X.T@self.X
         self.retrieved_thetas.append(((inv(a)@self.X.T@y).flatten())) # THERE'S A PROBLEM HERE: THETAS ARE BEING STORED PERMANENTLY
