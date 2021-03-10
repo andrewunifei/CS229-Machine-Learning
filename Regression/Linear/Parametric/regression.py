@@ -30,9 +30,9 @@ class Linear():
         return self.retrieved_thetas
 
     def __preprocessing(self):
-        # Adds a new column to raw_X which will be populated with values of 1
-        # This is necessary because self.theta has a theta_0 bias parameter and later X will be multiplied by self.theta 
-
+        '''
+        Adds intercept 
+        '''
         if len(np.shape(self.raw_X)) == 1:
             self.raw_X = self.raw_X[:, np.newaxis]
         ones = np.ones(np.shape(self.raw_X)[0])
@@ -81,13 +81,15 @@ class Linear():
 
     def normal_equation(self):
         '''
-        Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function
+        Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function \n
+        Returns thetas values
         '''
         # This method instantly finds the appropriated values of theta by setting ∇J(θ)=0
 
         y = self.y[:, np.newaxis]
-        a = self.X.T@self.X
-        self.retrieved_thetas.append(((inv(a)@self.X.T@y).flatten())) # THERE'S A PROBLEM HERE: THETAS ARE BEING STORED PERMANENTLY
+        theta = ((inv(self.X.T@self.X)@self.X.T@y).flatten())
+
+        return np.array([theta])
 
 
 if __name__ == '__main__':

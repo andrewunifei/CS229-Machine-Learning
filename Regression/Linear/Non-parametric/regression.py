@@ -10,6 +10,9 @@ class Linear():
         self.m = len(y)
     
     def __preprocessing(self):
+        '''
+        Adds intercept 
+        '''
         if len(np.shape(self.raw_X)) == 1:
             self.raw_X = self.raw_X[:, np.newaxis]
         ones = np.ones(np.shape(self.raw_X)[0])
@@ -18,11 +21,15 @@ class Linear():
         return np.concatenate((ones, self.raw_X), axis=1)
 
     def __w(self, i, x, tau):
+        '''
+        Definition of w function.
+        Cost values will be weighted by the return of this function
+        '''
         return np.exp(-(np.sum((self.X[i] - x)**2))/(2*tau**2))
 
     def locally_weighted(self, x):
         '''
-        Function that utilizes the method of locally weighted regression
+        Function that utilizes the method of locally weighted regression through normal equation
         to evaluate the parameters (otherwise known as weights) of a linear function
         around a given value of x
         '''
