@@ -81,7 +81,7 @@ class Linear():
 
     def normal_equation(self):
         '''
-        Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function \n
+        Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function.
         Returns thetas values
         '''
         # This method instantly finds the appropriated values of theta by setting ∇J(θ)=0
