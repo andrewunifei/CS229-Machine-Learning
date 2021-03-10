@@ -45,13 +45,17 @@ The snippet of code that implements those formulas is as follows:
         return thetas.T@x.T # Prediction on given x 
 ```
 
-## Visual representation
+## Visual representation of differents values of tau
+Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to determine the range of how many neighbors of x to consider. This range is called bandwidth and the broader it gets, less acurate the function in a particular x will be. Tau is directcly related with the condition of **overfiting** or  **underfitting** of a linear model.
+
 <div align="center">
-<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/a-tau_10.png" width="40%" height="40%" style="float:left">
-<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/b-tau_1.png" width="40%" height="40%" style="float:left">
+<img src="https://user-images.githubusercontent.com/29299799/110641863-3c7d0780-8191-11eb-8c62-e0577f895181.png" width="40%" height="40%" style="float:left">
+<img src="https://user-images.githubusercontent.com/29299799/110641962-50c10480-8191-11eb-93af-e749dcd8ceb0.png" width="40%" height="40%" style="float:left">
 </div>
 
 <div align="center">
-<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/c-tau_05.png" width="40%" height="40%" style="float:left">
-<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/d-tau_005.png" width="40%" height="40%" style="float:left">
+<img src="https://user-images.githubusercontent.com/29299799/110641994-5880a900-8191-11eb-9270-c07f22ba3ebc.png" width="40%" height="40%" style="float:left">
+<img src="https://user-images.githubusercontent.com/29299799/110642030-62a2a780-8191-11eb-881e-7ec2b27738cb.png" width="40%" height="40%" style="float:left">
 </div>
+
+With tau = 10, the model was underfitted, but as its value was progressively decreasing, the model were getting more suitable to the data.
