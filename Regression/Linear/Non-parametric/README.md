@@ -9,7 +9,7 @@ Based on notes from lecture 3 of the course [Stanford CS229: Machine Learning | 
 [numpy](https://github.com/numpy)
 
 ## Locally Weighted Regression
-Locally Weighted Regression is the task of modeling a linear function to a particular value of x considering its neighbors values. This consideration is done by applying a weight to all x^(i) values in the dataset. Those near x are weighted more heavily, whereas those far away are weighted more softly, therefore the former has a greater impact in the final calculation.
+Locally Weighted Regression is the task of modeling a linear function to a particular value of x considering its neighbors values. This consideration is done by applying a weight to the loss function J(θ) evaluated for each value of x in the dataset. Those points near x are weighted more heavily, whereas those far away are weighted more softly, therefore the former has a greater impact in the final calculation.
 
 The formula used to implement this algorithm is defined as:
 
