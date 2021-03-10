@@ -95,7 +95,7 @@ The flickering near the end is due to the algorithm's stochastic nature. That is
 ### Normal Equation
 <p align="center"><img src="https://user-images.githubusercontent.com/29299799/110643347-c4afdc80-8192-11eb-94f2-192884d53e4e.png"></p>
 
-This method returns only one set of thetas which are already suitable.
+This method returns only one set of thetas which are already suited.
 
 ### Data with multiple features
 The two previous examples dealt with *x* having only one feature, therefore, the hypothetical linear function had the form
