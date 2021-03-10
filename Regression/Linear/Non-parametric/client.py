@@ -11,7 +11,9 @@ y = genfromtxt('data/data1.csv', delimiter=',', usecols=1, skip_header=1)
 fig, ax = plt.subplots()
 plt.scatter(X, y)
 
-linear_obj = regression.Linear(X, y, 0.05)
+tau = 0.05
+linear_obj = regression.Linear(X, y, tau)
 prediction = [linear_obj.locally_weighted(x) for x in X]
 plt.scatter(X, prediction)
+ax.set_title(r'$\tau$ = ' + str(tau), loc="left")
 plt.show()
