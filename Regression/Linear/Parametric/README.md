@@ -93,7 +93,7 @@ As clarified in the previous section, the velocity in which θj is being evaluat
 The flickering near the end is due to the algorithm's stochastic nature. That is, because the steps towards the point where ∇J(θ)=0 is calculated based upon only one sample point at each iteration, the optimum minimum is never reached, rather steps are taken around it, but they never converge into it.
 
 ### Normal Equation
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/normal.png"></p>
 
 This method returns only one set of thetas which are already suitable.
 
