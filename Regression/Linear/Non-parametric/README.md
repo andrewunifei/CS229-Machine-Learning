@@ -47,11 +47,11 @@ The snippet of code that implements those formulas is as follows:
 
 ## Visual representation
 <div align="center">
-<img src="" style="float:left;">
-<img src="" style="float:left;">
+<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/a-tau_10.png" width="40%" height="40%" style="float:left">
+<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/b-tau_1.png" width="40%" height="40%" style="float:left">
 </div>
 
 <div align="center">
-<img src="" style="float:left;">
-<img src="" style="float:left;">
+<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/c-tau_05.png" width="40%" height="40%" style="float:left">
+<img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Non-parametric/Resources/Tau/d-tau_005.png" width="40%" height="40%" style="float:left">
 </div>
