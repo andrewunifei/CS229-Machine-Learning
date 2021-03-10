@@ -58,4 +58,4 @@ Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to de
 <img src="https://user-images.githubusercontent.com/29299799/110642030-62a2a780-8191-11eb-881e-7ec2b27738cb.png" width="40%" height="40%" style="float:left">
 </div>
 
-With tau = 10, the model was underfitted, but as its value was progressively decreasing, the model got more suitable to the data.
+With tau = 10 the model was underfitted, but as its value was progressively decreasing, the model got more suitable to the data.
