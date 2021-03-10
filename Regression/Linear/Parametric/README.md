@@ -89,4 +89,4 @@ And its visual representation as
 
 It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane.
 
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
+<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
