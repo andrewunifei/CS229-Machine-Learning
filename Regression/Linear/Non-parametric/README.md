@@ -46,7 +46,7 @@ The snippet of code that implements those formulas is as follows:
 ```
 
 ## Visual representation of effects of different values of tau
-Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to determine the range of how many neighbors of x to consider. This range is called bandwidth and the broader it gets, less acurate the function in a particular x will be. Tau is directcly related with the condition of **overfiting** or  **underfitting** of a linear model.
+Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to determine the range of how many neighbors of x to consider. This range is called bandwidth and the broader it gets, less acurate the function in a particular x will be. Tau is directcly related with the condition of **overfiting** or  **underfitting** of a locally weighted regression model.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/29299799/110641863-3c7d0780-8191-11eb-8c62-e0577f895181.png" width="40%" height="40%" style="float:left">
