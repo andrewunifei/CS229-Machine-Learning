@@ -81,19 +81,19 @@ def normal_equation(self):
 The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of changes in the linear function. This script is named ```plot2D.py``` in this repository.
 
 ### Batch Gradient Descent
-<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/batch.gif"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/110643351-c5487300-8192-11eb-978b-9f441364457f.gif"></p>
 
 The velocity of calculation doesn't match the real time taken. In reality, with this amount of data, calculation is practically instantaneous. Nonetheless, θj being evaluated one at a time is accurate, it was implemented this way to demonstrate different flavors of evaluation.
 
 ### Stochastic Gradient Descent
-<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/stochastic.gif"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/110643352-c5e10980-8192-11eb-85ba-398fc08e52d0.gif"></p>
 
 As clarified in the previous section, the velocity in which θj is being evaluated is not real. But, unlike the other approach, they are being calculated at the same time.
 
 The flickering near the end is due to the algorithm's stochastic nature. That is, because the steps towards the point where ∇J(θ)=0 is calculated based upon only one sample point at each iteration, the optimum minimum is never reached, rather steps are taken around it, but they never converge into it.
 
 ### Normal Equation
-<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/normal.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/110643347-c4afdc80-8192-11eb-94f2-192884d53e4e.png"></p>
 
 This method returns only one set of thetas which are already suitable.
 
@@ -106,10 +106,9 @@ With bias θ0 the function expressed a 2-dimensional geometry. But, those same a
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045238.png"></p>
 
-And its visual representation as
+It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane:
 
-<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot.png"></p>
-
-It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane.
-
-<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
+<div align="center">
+        <img src="https://user-images.githubusercontent.com/29299799/110643241-a518b400-8192-11eb-8730-6af7e448a996.png" width="40%" height="40%" style="float:left;">
+        <img src="https://user-images.githubusercontent.com/29299799/110643248-a8ac3b00-8192-11eb-93d9-94fc79fe98ba.png" width="40%" height="40%" style="float:left;">
+</div>
