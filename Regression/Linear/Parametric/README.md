@@ -63,12 +63,12 @@ My idea is to explore different implementations of gradient descent. In contrast
 The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of changes in the linear function. This script is named ```plot2D.py``` in this repository.
 
 ### Batch Gradient Descent
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Resources/batch.gif"></p>
+<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/batch.gif"></p>
 
 The velocity of calculation doesn't match the real time taken. In reality, with this amount of data, calculation is practically instantaneous. Nonetheless, θj being evaluated one at a time is accurate, it was implemented this way to demonstrate different flavors of evaluation.
 
 ### Stochastic Gradient Descent
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Resources/stochastic.gif"></p>
+<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/stochastic.gif"></p>
 
 As clarified in the previous section, the velocity in which θj is being evaluated is not real. But, unlike the other approach, they are being calculated at the same time.
 
@@ -85,8 +85,8 @@ With bias θ0 the function expressed a 2-dimensional geometry. But, those same a
 
 And its visual representation as
 
-<p align=center><img src="https://raw.githubusercontent.com/andrewunifei/CS229-Machine-Learning/main/Regression/Linear/Resources/3d_plot.png"></p>
+<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot.png"></p>
 
 It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane.
 
-<p align=center><img src="https://raw.githubusercontent.com/andrewunifei/CS229-Machine-Learning/main/Regression/Linear/Resources/3d_plot2.png"></p>
+<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
