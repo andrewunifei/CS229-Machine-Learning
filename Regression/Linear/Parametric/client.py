@@ -1,10 +1,11 @@
 # A client file for tests
 
 import regression
+from numpy import genfromtxt
 import plot2D as plot
-import dummy_data
 
-X, y = dummy_data.get(1)
+X = genfromtxt('data/data1.csv', delimiter=',', usecols=0, skip_header=1)
+y = genfromtxt('data/data1.csv', delimiter=',', usecols=1, skip_header=1)
 
 model = regression.Linear(X, y, learning_rate=0.00001)
 model.batch_gradient_descent()
