@@ -1,6 +1,6 @@
 # Parametric Linear Regression
 
-Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, I implemented and explored Batch Gradient Descent, Stochastic Gradient Descent and Evaluation Through Normal Equation algorithms using Python, three different approach based on gradient descent to calculate linear regression.
+Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, I implemented and explored **Batch Gradient Descent**, **Stochastic Gradient Descent** and **Evaluation Through Normal Equation** algorithms using Python, three different approach based on gradient descent to calculate linear regression.
 
 ### Dependencies 
 [matplotlib](https://github.com/matplotlib/)
