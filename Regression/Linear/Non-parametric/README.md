@@ -45,7 +45,7 @@ The snippet of code that implements those formulas is as follows:
         return thetas.T@x.T # Prediction on given x 
 ```
 
-## Visual representation of differents values of tau
+## Visual representation of effects of different values of tau
 Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to determine the range of how many neighbors of x to consider. This range is called bandwidth and the broader it gets, less acurate the function in a particular x will be. Tau is directcly related with the condition of **overfiting** or  **underfitting** of a linear model.
 
 <div align="center">
@@ -58,4 +58,4 @@ Tau is a *hyperparameter* present in the denominator of w^(i). Its role is to de
 <img src="https://user-images.githubusercontent.com/29299799/110642030-62a2a780-8191-11eb-881e-7ec2b27738cb.png" width="40%" height="40%" style="float:left">
 </div>
 
-With tau = 10, the model was underfitted, but as its value was progressively decreasing, the model were getting more suitable to the data.
+With tau = 10, the model was underfitted, but as its value was progressively decreasing, the model got more suitable to the data.
