@@ -1,6 +1,6 @@
-# Linear Regression
+# Parametric Linear Regression
 
-Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, Batch Gradient Descent algorithm and Stochastic Gradient Descent algorithm, two different approach based on gradient descent to calculate linear regression, were implemented and explored using Python.
+Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, I implemented and explored Batch Gradient Descent, Stochastic Gradient Descent and Evaluation Through Normal Equation algorithms using Python, three different approach based on gradient descent to calculate linear regression.
 
 ### Dependencies 
 [matplotlib](https://github.com/matplotlib/)
@@ -10,7 +10,7 @@ Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | 
 ## Batch Gradient Descent
 The formula used for this first approach was derived from the notes and is the following:
 
-<p align="center"><img align=center src="http://www.sciweavers.org/download/Tex2Img_1615042970.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615042970.png"></p>
 
 Where θj, the parameters of a linear combination (otherwise known as weights), is subsequently updated based on a sum of an "actual value" y^(i) minus a "predicted value" hθ(x^(i)) times a particular feature xj^(i) weighted by a learning rate α. Iteration occurs until θj converge. The term with Σ is the gradient of a cost function J(θ).
 
@@ -31,7 +31,7 @@ In this approach, each value of θj is evaluated individually at each *j-th* ite
 ## Stochastic Gradient Descent
 The formula used for this second approach was also derived from the notes and is defined as follow:
 
-<p align="center"><img align=center src="http://www.sciweavers.org/download/Tex2Img_1615044029.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615044029.png"></p>
 
 The main difference is that, when updating θj, only one data point from the training set is consider in the calculation at each iteration, whereas in Batch Gradient Descent, every data point was added up at each iteration. One might consider the stochastic approach when dealing with huge data sets, because in a scenario like this, Batch Gradient Descent becomes inviable due to the amount of time the algorithm would consume.
 
@@ -59,34 +59,57 @@ def stochastic_gradient_descent(self):
 
 My idea is to explore different implementations of gradient descent. In contrast with the batch one, in this case I chose to update every θj at the same *i-th* iteration, so they are evaluated almost at the same time. The condition defined to stop the iteration was to verify if every step taken in each calculation of the parameters were less than 0.0001 or if a maximum number 1000 of steps were reached.
 
+## Normal Equation
+The idea behind this approach is to set ∇J(θ) to 0, because the local minimum is a point where the value of gradient is zero. After working algebraically from this, we reach the following formula:
+
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615376864.png"></p>
+
+This method doesn't rely on any iteration, evaluation of parameters' values occur executing a single line of code.
+
+The snippet of code that implements this third approach is the following:
+
+```python
+def normal_equation(self):
+        y = self.y[:, np.newaxis] # isn't part of the formula
+        
+        theta = ((inv(self.X.T@self.X)@self.X.T@y).flatten())
+
+        return np.array([theta]) # isn't part of the formula
+```
+
 ## Visual examples of parameters' calculation and its effect in the linear function
 The animation and the 3D plotting were made using [matplotlib](https://github.com/matplotlib/). I wrote a script that, given a list of training data X, y and a list of all calculated θ to an instantiated object, it's possible to generate an animation of changes in the linear function. This script is named ```plot2D.py``` in this repository.
 
 ### Batch Gradient Descent
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/batch.gif"></p>
+<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/batch.gif"></p>
 
 The velocity of calculation doesn't match the real time taken. In reality, with this amount of data, calculation is practically instantaneous. Nonetheless, θj being evaluated one at a time is accurate, it was implemented this way to demonstrate different flavors of evaluation.
 
 ### Stochastic Gradient Descent
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/stochastic.gif"></p>
+<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/stochastic.gif"></p>
 
 As clarified in the previous section, the velocity in which θj is being evaluated is not real. But, unlike the other approach, they are being calculated at the same time.
 
 The flickering near the end is due to the algorithm's stochastic nature. That is, because the steps towards the point where ∇J(θ)=0 is calculated based upon only one sample point at each iteration, the optimum minimum is never reached, rather steps are taken around it, but they never converge into it.
 
+### Normal Equation
+<p align="center"><img src=""></p>
+
+This method returns only one set of thetas which are already suitable.
+
 ### Data with multiple features
 The two previous examples dealt with *x* having only one feature, therefore, the hypothetical linear function had the form
 
-<p align=center><img src="http://www.sciweavers.org/download/Tex2Img_1615045196.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045196.png"></p>
 
 With bias θ0 the function expressed a 2-dimensional geometry. But, those same algorithms can also deal with more features. In the following case, with a dummy training dataset, the hypothetical function is defined as
 
-<p align=center><img src="http://www.sciweavers.org/download/Tex2Img_1615045238.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045238.png"></p>
 
 And its visual representation as
 
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot.png"></p>
+<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot.png"></p>
 
 It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane.
 
-<p align=center><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
+<p align="center"><img src="https://github.com/andrewunifei/CS229-Machine-Learning/blob/main/Regression/Linear/Parametric/Resources/3d_plot2.png"></p>
