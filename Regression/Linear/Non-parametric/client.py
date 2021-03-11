@@ -12,8 +12,8 @@ fig, ax = plt.subplots()
 plt.scatter(X, y)
 
 tau = 0.05
-linear_obj = regression.Linear(X, y, tau)
-prediction = [linear_obj.locally_weighted(x) for x in X]
+tools = regression.Linear(X, y, tau)
+prediction = [tools.locally_weighted(x) for x in X]
 plt.scatter(X, prediction)
 ax.set_title(r'$\tau$ = ' + str(tau), loc="left")
 plt.show()
