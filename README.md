@@ -3,3 +3,4 @@ Repository to keep notes taken and activities realized in the course "CS229: Mac
 
 ## Table of Contents
 * [Linear regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Linear)
+* [Classification](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Classification/) 
