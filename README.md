@@ -2,4 +2,4 @@
 Repository to keep notes taken and activities realized in the course "CS229: Machine Learning" distributed by Stanford University. 
 
 ## Table of Contents
-* [Linear regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Linear/Regression/)
+* [Linear regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Linear)
