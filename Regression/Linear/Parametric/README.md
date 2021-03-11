@@ -64,7 +64,7 @@ The idea behind this approach is to set ∇J(θ) to 0, because the local minimum
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615376864.png"></p>
 
-This method doesn't rely on any iteration, evaluation of parameters' values occur executing a single line of code.
+This method doesn't rely on any iteration, evaluation of parameters' values occur executing a single operation.
 
 The snippet of code that implements this third approach is the following:
 
