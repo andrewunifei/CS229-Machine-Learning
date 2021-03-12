@@ -23,7 +23,7 @@ In order to fit a set of parameters θ to the logistic regression model, we defi
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554437.png"></p>
 
-And through aritimetic manipulations, make use of the method *maximum likelihood estimator*, which gives us the log likelihood defined as:
+And through algebraic manipulations, make use of the method *maximum likelihood estimator*, which gives us the log likelihood defined as:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615555529.png"></p>
 
