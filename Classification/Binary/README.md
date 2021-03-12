@@ -41,6 +41,7 @@ The Decision Boundary is a line which separates the categories of data. It is in
 Because (Condition).
 
 ### Scikit-Learn
+#### Logistic Regression
 ```python
 def logistic_regression(self):
   model = LogisticRegression(random_state=0)
@@ -50,6 +51,13 @@ def logistic_regression(self):
   self.intercept = model.intercept_
 
   return predictions
+```
+
+#### Decision Boundary
+```python
+x = np.linspace(2, np.amax(x1))
+y = -self.coef[0]/self.coef[1] * x - self.intercept/self.coef[1]
+line, = ax.plot(x, y)
 ```
 
 ## Visualization
