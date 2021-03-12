@@ -15,7 +15,7 @@ and returns a probability value which is ultimately evaluated into one of the tw
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615551113.png"></p>
   
-The criterion based on the returned value of the sigmoid function for determine a category is:
+And the criterion based on the returned value of the sigmoid function to determine a category is:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615551800.png"></p>
  
