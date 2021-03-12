@@ -17,8 +17,31 @@ and returns a probability value which is ultimately evaluated into one of the tw
   
 And the criterion based on the returned value of the sigmoid function to determine a category is:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615551800.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615557096.png"></p>
  
+In order to fit a set of parameters θ to the sigmoid function, we define the cost function *h(x)* as:
+
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554437.png"></p>
+
+And through aritimetic manipulations, make use of the method *maximum likelihood estimator*, which gives us the log likelihood defined as:
+
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615555529.png"></p>
+
+Which allow us to update θ through gradient ascent (since we want to maximaze a likelihood value). Updates in θ are given by Stochastic Gradient Ascent:
+
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554986.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554991.png"></p>
+
+### Decision Boundary
+The Decision Boundary is a line which separate the categories of data. It is indepedent of the dataset and rely only on the parameters θ. In binary classification is formaly defined as:
+
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556494.png"></p>
+<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556282.png"></p>
+
+Because (Condition).
+
+## Visualization
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/29299799/110936147-31e87c80-830f-11eb-884f-b530804a2ff6.png" width="40%" height="40%" style="float:left">
 <img src="https://user-images.githubusercontent.com/29299799/110936151-3319a980-830f-11eb-9467-08823427cf2e.png" width="40%" height="40%">
