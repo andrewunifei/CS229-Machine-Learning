@@ -7,4 +7,4 @@ X_valid = genfromtxt('data/data1_valid.csv', delimiter=',', usecols=(0, 1), skip
 
 model = classification.Binary(X_train, y_train, X_toPredict=X_train)
 predictions = model.logistic_regression()
-model.plot_binary_classification(predictions)
+model.plot_binary_classification(predictions, boundary=True)
