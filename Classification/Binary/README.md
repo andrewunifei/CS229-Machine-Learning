@@ -41,6 +41,7 @@ The Decision Boundary is a line which separates the categories of data. It is in
 Because (Condition).
 
 ## Visualization
+Training data is labeled.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/29299799/110936147-31e87c80-830f-11eb-884f-b530804a2ff6.png" width="40%" height="40%" style="float:left">
