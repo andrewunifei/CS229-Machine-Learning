@@ -19,7 +19,7 @@ And the criterion based on the returned value of the sigmoid function to determi
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615557096.png"></p>
  
-In order to fit a set of parameters θ to the sigmoid function, we define the cost function *h(x)* as:
+In order to fit a set of parameters θ to the logistic regression model, we define the cost function *h(x)* as:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554437.png"></p>
 
