@@ -7,7 +7,7 @@ Based on notes from lecture 3 of the course [Stanford CS229: Machine Learning | 
 [numpy](https://github.com/numpy)
 
 ## Logistic Regression
-Logistic Regression in the context of binary classification is the task of classify a set of datas into two categories (commomly defined as 1 and 0). It makes use of a **logistic function**, usually the **sigmoid function**, which takes as input a linear combination of features and parametes of the form:
+Logistic Regression in the context of binary classification is the supervised task of classify a set of datas into two categories (commomly defined as 1 and 0). It makes use of a **logistic function**, usually the **sigmoid function**, which takes as input a linear combination of features and parametes of the form:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615550480.png"></p>
 
