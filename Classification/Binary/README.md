@@ -11,7 +11,7 @@ Logistic Regression in the context of binary classification is the supervised ta
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615550480.png"></p>
 
-and returns a probability value which is ultimately evaluated into one of the two categoies. The sigmoid function is defined as:
+and returns a probability value which is ultimately evaluated into one of the two categories. The sigmoid function is defined as:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615551113.png"></p>
   
