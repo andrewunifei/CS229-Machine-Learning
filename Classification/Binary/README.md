@@ -55,7 +55,7 @@ def logistic_regression(self):
 
 #### Decision Boundary
 ```python
-x = np.linspace(2, np.amax(x1))
+x = np.linspace(np.amin(x1), np.amax(x1))
 y = -self.coef[0]/self.coef[1] * x - self.intercept/self.coef[1]
 line, = ax.plot(x, y)
 ```
