@@ -33,7 +33,7 @@ Which allow us to update θ through gradient ascent (since we want to maximaze a
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554991.png"></p>
 
 ### Decision Boundary
-The Decision Boundary is a line which separate the categories of data. It is indepedent of the dataset and rely only on the parameters θ. In binary classification is formaly defined as:
+The Decision Boundary is a line which separates the categories of data. It is indepedent of the dataset and rely only on the parameters θ. In binary classification is formaly defined as:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556494.png"></p>
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556282.png"></p>
