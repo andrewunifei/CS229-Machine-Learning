@@ -40,9 +40,19 @@ The Decision Boundary is a line which separates the categories of data. It is in
 
 Because (Condition).
 
-## Visualization
-Training data is labeled.
+### Scikit-Learn
+```python
+def logistic_regression(self):
+  model = LogisticRegression(random_state=0)
+  model.fit(self.X_train, self.y_train.ravel())
+  predictions = model.predict(self.X_toPredict)
+  self.coef = model.coef_[0]
+  self.intercept = model.intercept_
 
+  return predictions
+```
+
+## Visualization
 <div align="center">
 <img src="https://user-images.githubusercontent.com/29299799/110936147-31e87c80-830f-11eb-884f-b530804a2ff6.png" width="40%" height="40%" style="float:left">
 <img src="https://user-images.githubusercontent.com/29299799/110936151-3319a980-830f-11eb-9467-08823427cf2e.png" width="40%" height="40%">
