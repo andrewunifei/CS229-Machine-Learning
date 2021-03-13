@@ -102,7 +102,7 @@ The two previous examples dealt with *x* having only one feature, therefore, the
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045196.png"></p>
 
-With bias θ0 the function expressed a 2-dimensional geometry. But, those same algorithms can also deal with more features. In the following case, with a dummy training dataset, the hypothetical function is defined as
+The function expressed a 2-dimensional geometry. But, those same algorithms can also deal with more features, therefore more dimensions. In the following case, with a dummy training dataset, the hypothetical function is defined as
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045238.png"></p>
 
