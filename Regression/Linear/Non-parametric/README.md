@@ -23,7 +23,7 @@ And w^(i) as:
 
 <p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615381386.png"></p>
 
-The snippet of code that implements those formulas are as follows:
+The snippet of code that implements those formulas is as follows:
 
 ```python
     def __w(self, i, x, tau):
