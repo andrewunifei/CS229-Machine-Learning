@@ -74,7 +74,7 @@ def normal_equation(self):
         
         theta = ((inv(self.X.T@self.X)@self.X.T@y).flatten())
 
-        return np.array([theta]) # isn't part of the formula
+        return np.array([theta])
 ```
 
 ## Visual examples of parameters' calculation and its effect in the linear function
