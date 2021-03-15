@@ -43,7 +43,7 @@ Because (Condition).
 ### Scikit-Learn
 #### Logistic Regression
 ```python
-def logistic_regression(self):
+def logistic_regression(self) -> object:
   model = LogisticRegression(random_state=0)
   model.fit(self.X_train, self.y_train.ravel())
   predictions = model.predict(self.X_toPredict)
@@ -58,6 +58,8 @@ def logistic_regression(self):
 x = np.linspace(np.amin(x1), np.amax(x1))
 y = -self.coef[0]/self.coef[1] * x - self.intercept/self.coef[1]
 line, = ax.plot(x, y)
+line.set_label('Decision Boundary')
+ax.legend(loc='upper left')
 ```
 
 ## Visualization
