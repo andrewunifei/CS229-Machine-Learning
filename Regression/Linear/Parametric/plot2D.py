@@ -7,7 +7,7 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 
 class Model():
-    def __init__(self, x_samples, y_samples, thetas):
+    def __init__(self, x_samples: object, y_samples: object, thetas) -> None:
         '''
         Constructor takes
         x_samples as a list of features,
@@ -18,7 +18,7 @@ class Model():
         self.x_samples = x_samples
         self.y_samples = y_samples
 
-    def animate(self, fileName):
+    def animate(self, fileName: str) -> None:
             print('plot_model.animate(): Generating gif...')
             fig, ax = plt.subplots()
 

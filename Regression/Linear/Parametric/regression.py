@@ -6,18 +6,19 @@
 
 import numpy as np
 from numpy.linalg import inv
+from sklearn.linear_model import LinearRegression
 
 class Linear():
-    def __init__(self, raw_X, y, learning_rate=0.00001):
+    def __init__(self, raw_X: object, y: object, learning_rate: float = 0.00001) -> None:
         '''
         Constructor takes
         raw_X as a list of features,
         y as a list of correspondent values to X and
         learning_rate as the learning rate.
         '''
-        self.raw_X = np.array(raw_X)
+        self.raw_X = raw_X
         self.X = self.__preprocessing()
-        self.y = np.array(y)
+        self.y = y
         self.learning_rate = learning_rate
         self.m = len(y)
         self.theta = np.zeros(np.shape(self.X)[1]) # num of parameters is determined by quantity of column in X (num of features)
@@ -29,7 +30,7 @@ class Linear():
         '''
         return self.retrieved_thetas
 
-    def __preprocessing(self):
+    def __preprocessing(self) -> object:
         '''
         Adds intercept 
         '''
@@ -40,12 +41,12 @@ class Linear():
 
         return np.concatenate((ones, self.raw_X), axis=1)
 
-    def __hypothesis(self, x):
+    def __hypothesis(self, x: object):
         # h(x) = theta_0 + theta_1 * x_1 + ... + theta_n * x_n
         # return sum(h(x)) for all values of x
-        return sum(x * self.theta) 
+        return sum(x * self.theta)
 
-    def batch_gradient_descent(self):
+    def batch_gradient_descent(self) -> None:
         '''
         Function that utilizes the method of batch gradient descent
         to evaluate the parameters (otherwise known as weights) of a linear function
@@ -56,7 +57,7 @@ class Linear():
                 self.theta[j] = self.theta[j] + (self.learning_rate * (np.sum(self.y) - np.sum(self.X * self.theta)) * self.X[i][j])
                 self.retrieved_thetas.append(self.theta.copy())
 
-    def stochastic_gradient_descent(self):
+    def stochastic_gradient_descent(self) -> None:
         '''
         Function that utilizes the method of stochastic gradient descent
         to evaluate the parameters (otherwise known as weights) of a linear function
@@ -79,7 +80,7 @@ class Linear():
                     FLAG = 0
                 NUM_STEPS -=1
 
-    def normal_equation(self):
+    def normal_equation(self) -> None:
         '''
         Function that utilizes the method of normal equation to evaluate the parameters (otherwise known as weights) of a linear function.
         Returns thetas values
@@ -89,7 +90,11 @@ class Linear():
         y = self.y[:, np.newaxis]
         theta = ((inv(self.X.T@self.X)@self.X.T@y).flatten())
 
-        return np.array([theta])
+        self.retrieved_thetas = np.array([theta])
+    
+    def sklearn_linear_reg(self) -> None:
+        model = LinearRegression().fit(self.X, self.y)
+        self.retrieved_thetas = np.array([np.insert(np.array(model.coef_[1]), 0, model.intercept_)])
 
 
 if __name__ == '__main__':

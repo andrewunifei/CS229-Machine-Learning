@@ -13,7 +13,7 @@ plt.scatter(X, y)
 
 tau = 0.05
 tools = regression.Linear(X, y, tau)
-prediction = [tools.locally_weighted(x) for x in X]
-plt.scatter(X, prediction)
+predictions = [tools.locally_weighted(x) for x in X]
+plt.scatter(X, predictions)
 ax.set_title(r'$\tau$ = ' + str(tau), loc="left")
 plt.show()

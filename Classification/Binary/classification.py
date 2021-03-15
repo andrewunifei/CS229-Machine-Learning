@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 class Binary():
-    def __init__(self, X_train, y_train , X_toPredict):
+    def __init__(self, X_train: object, y_train: object , X_toPredict: object) -> None:
         '''
         Args:
         Set of datas X and y to train,
@@ -16,7 +16,7 @@ class Binary():
         self.coef = np.empty((0,0)) 
         self.intercept = np.empty((0,0)) 
 
-    def logistic_regression(self):
+    def logistic_regression(self) -> object:
         model = LogisticRegression(random_state=0)
         model.fit(self.X_train, self.y_train.ravel())
         predictions = model.predict(self.X_toPredict)
@@ -25,7 +25,7 @@ class Binary():
 
         return predictions
 
-    def GDA(self):
+    def GDA(self) -> object:
         """
         Gaussian discriminant analysis
         """
@@ -35,7 +35,7 @@ class Binary():
 
         return predictions
     
-    def plot_binary_classification(self, predictions, boundary=False):
+    def plot_binary_classification(self, predictions: object, boundary: object = False) -> None:
         x1 = self.X_toPredict[:,0]
         x2 = self.X_toPredict[:,1]
 
@@ -45,7 +45,7 @@ class Binary():
 
         if boundary:
             # Decision boundary
-            x = np.linspace(2, np.amax(x1))
+            x = np.linspace(np.amin(x1), np.amax(x1))
             y = -self.coef[0]/self.coef[1] * x - self.intercept/self.coef[1]
             line, = ax.plot(x, y)
             line.set_label('Decision Boundary')
@@ -61,6 +61,6 @@ class Binary():
     def retrieve_parameters(self):
         return self.coef, self.intercept
     
-    def save_predictions(self, predictions):
+    def save_predictions(self, predictions: object) -> None:
         data = np.concatenate((self.X_toPredict[:,0].reshape((-1, 1)), self.X_toPredict[:,1].reshape((-1, 1)), predictions.reshape((-1, 1))), axis=1)
         np.savetxt('predictions.csv', data, delimiter=',', header='x_1,x_2,y', comments="")

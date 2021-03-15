@@ -10,7 +10,9 @@ y = genfromtxt('data/data3.csv', delimiter=',', usecols=1, skip_header=1)
 model = regression.Linear(X, y, learning_rate=0.00001)
 #model.batch_gradient_descent()
 #model.stochastic_gradient_descent()
-thetas = model.normal_equation()
+model.normal_equation()
+
+thetas = model.get_thetas()
 
 plot_model = plot2D.Model(X, y, thetas)
-plot_model.animate('np2')
+plot_model.animate('plot')
