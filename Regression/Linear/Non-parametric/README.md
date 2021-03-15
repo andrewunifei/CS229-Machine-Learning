@@ -26,14 +26,14 @@ And w^(i) as:
 The snippet of code that implements those formulas is as follows:
 
 ```python
-    def __w(self, i: int, x: object, tau: float) -> object:
+def __w(self, i: int, x: object, tau: float) -> object:
         '''
         Definition of w function.
         Cost values will be weighted by the return of this function
         '''
         return np.exp(-(np.sum((self.X[i] - x)**2))/(2*tau**2))
 
-    def locally_weighted(self, x: object) -> object:
+def locally_weighted(self, x: object) -> object:
         '''
         Function that utilizes the method of locally weighted regression through normal equation
         to evaluate the parameters (otherwise known as weights) of a linear function
@@ -54,7 +54,7 @@ The snippet of code that implements those formulas is as follows:
 I also approach this algorithm using the library **scikit-lego**:
 
 ```python
-    def sklego_lowess(self) -> object:
+def sklego_lowess(self) -> object:
         '''
         Locally weighted regression using scikit-lego
         '''
