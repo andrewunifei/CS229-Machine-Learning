@@ -3,9 +3,9 @@
 Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, I implemented and explored **Batch Gradient Descent**, **Stochastic Gradient Descent** and **Evaluation Through Normal Equation** algorithms using Python, three different approach based on gradient descent to calculate linear regression.
 
 ### Dependencies 
-[matplotlib](https://github.com/matplotlib/)
-
-[numpy](https://github.com/numpy)
+[scikit-learn](https://scikit-learn.org/stable/)</br>
+[matplotlib](https://matplotlib.org/)</br>
+[numpy](https://numpy.org/)
 
 ## Batch Gradient Descent
 The formula used for this first approach was derived from the notes and is the following:
@@ -18,7 +18,7 @@ Where θj, the parameters of a linear combination (otherwise known as weights), 
 The snippet of code that implements the aforementioned formula is defined as:
 
 ```python
-def batch_gradient_descent(self):
+def batch_gradient_descent(self) -> None:
         for j in range(len(self.theta)):
             for i in range(self.m):
                 self.theta[j] = self.theta[j] + \
@@ -38,7 +38,7 @@ The main difference is that, when updating θj, only one data point from the tra
 The snippet of code that implements this second approach is the following:
 
 ```python
-def stochastic_gradient_descent(self):
+def stochastic_gradient_descent(self) -> None:
         FLAG = 1
         NUM_STEPS = 1000
         steps = [0] * len(self.theta)
@@ -69,12 +69,19 @@ This method doesn't rely on any iteration, evaluation of parameters' values occu
 The snippet of code that implements this third approach is the following:
 
 ```python
-def normal_equation(self):
-        y = self.y[:, np.newaxis] # isn't part of the formula
-        
+def normal_equation(self) -> object:
+        y = self.y[:, np.newaxis] # Isn't part of the formula
         theta = ((inv(self.X.T@self.X)@self.X.T@y).flatten())
 
         return np.array([theta])
+```
+
+## Scikit-learn
+I also approach linear regression using the library scikit-learn:
+```python
+def sklearn_linear_reg(self) -> object:
+        model = LinearRegression().fit(self.X, self.y)
+        self.retrieved_thetas = np.array([np.insert(np.array(model.coef_[1]), 0, model.intercept_)])
 ```
 
 ## Visual examples of parameters' calculation and its effect in the linear function
