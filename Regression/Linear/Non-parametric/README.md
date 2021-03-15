@@ -34,11 +34,6 @@ def __w(self, i: int, x: object, tau: float) -> object:
         return np.exp(-(np.sum((self.X[i] - x)**2))/(2*tau**2))
 
 def locally_weighted(self, x: object) -> object:
-        '''
-        Function that utilizes the method of locally weighted regression through normal equation
-        to evaluate the parameters (otherwise known as weights) of a linear function
-        around a given value of x
-        '''
         x = np.r_[1, x]
         y = self.y[:, np.newaxis]
         W = np.zeros((self.m, self.m))
