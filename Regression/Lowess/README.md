@@ -1,4 +1,4 @@
-# Non-parametric Linear Regression
+# Locally Weighted Regression
 
 Based on notes from lecture 3 of the course [Stanford CS229: Machine Learning | Autumn 2018](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) with professor Andrew Y. Ng, I implemented and explored **Locally Weighted Regression** using Python to calculate linear regression in a non-linear function.
 
