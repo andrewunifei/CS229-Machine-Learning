@@ -3,4 +3,7 @@ Repository to keep notes taken and activities realized in the course "CS229: Mac
 
 ## Table of Contents
 * [Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/)
-* [Classification](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Classification/) 
+  + [Linear](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Linear)
+  + [Locally Weighted](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Lowess)
+  + [Logistic](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Logistic)
+    - [Binomial](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Logistic/Binomial)
