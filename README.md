@@ -7,3 +7,4 @@ Repository to keep notes taken and activities realized in the course "CS229: Mac
   + [Locally Weighted](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Lowess)
   + [Logistic](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Logistic)
     - [Binomial](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Logistic/Binomial)
+    - [Multinomial](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/Regression/Logistic/Multinomial)
