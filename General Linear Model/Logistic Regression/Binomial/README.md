@@ -40,7 +40,7 @@ The Decision Boundary is a line which separates the categories of data. It is in
 
 Because (Condition).
 
-### Scikit-Learn
+### Scikit-learn
 #### Logistic Regression
 ```python
 def logistic_regression(self) -> object:
@@ -52,6 +52,8 @@ def logistic_regression(self) -> object:
 
   return predictions
 ```
+
+Scikit-learn has a solver called SAG (Stochastic Average Gradient) which is a variant of the Stochastic Gradient method. SAG is a good solver when the dataset is large, given that the data classified in this case is small, the default solver was used (lbfgs).
 
 #### Decision Boundary
 ```python
