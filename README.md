@@ -1,5 +1,5 @@
 # CS229-Machine-Learning
-Repository to keep notes taken and activities realized in the course "CS229: Machine Learning" distributed by Stanford University. 
+Repository to keep notes taken and activities realized in the course [CS229: Machine Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) distributed by Stanford University. 
 
 ## Table of Contents
 * [General Linear Model](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/)
