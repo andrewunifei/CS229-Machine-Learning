@@ -6,5 +6,5 @@ Repository to keep notes taken and activities realized in the course [CS229: Mac
   + [Linear Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Linear%20Regression)
   + [Locally Weighted Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Lowess%20Regression)
   + [Logistic Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression)
-    - [Binomial](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Binomial)
-    - [Multinomial](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Multinomial)
+    - [Binary (Binomial)](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Binomial)
+    - [Multiclass (Multinomial)](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Multinomial)
