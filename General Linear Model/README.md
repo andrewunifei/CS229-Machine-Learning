@@ -36,6 +36,6 @@ Examples of members of the exponential family are:
 
   Both suited for distributions over probabilities.
 
-There are others members the belongs to the exponential family.
+There are others members that belongs to the exponential family.
 
 ## General Linear Model
