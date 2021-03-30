@@ -9,34 +9,34 @@ Based on notes from lecture 3 of the course [Stanford CS229: Machine Learning | 
 ## Logistic Regression
 Logistic Regression in the context of binary classification is the supervised task of classify a set of datas into two categories (commomly defined as 1 and 0). It makes use of a **logistic function**, usually the **sigmoid function**, which takes as input a linear combination of features and parametes of the form:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615550480.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113064296-201b2c00-918d-11eb-93e4-013774bd466c.png"></p>
 
 and returns a probability value which is ultimately evaluated into one of the two categories. The sigmoid function is defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615551113.png"></p>
-  
-And the criterion based on the returned value of the sigmoid function to determine a category is:
-
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615557096.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113064556-991a8380-918d-11eb-8e54-493767ad1c25.png"></p>
  
 In order to fit a set of parameters θ to the logistic regression model, we define a hypothesis function *h(x)* as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554437.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113065162-ca478380-918e-11eb-9acf-8546ec65ec9c.png"></p>
+
+And the condition based on the returned value of the sigmoid function to determine a category is:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113064970-6cb33700-918e-11eb-8d2b-68acad4272db.png"></p>
 
 And through algebraic manipulations, make use of the method *maximum likelihood estimator*, which gives us the log likelihood defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615555529.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113065538-725d4c80-918f-11eb-8ae6-1ee0588089f6.png"></p>
 
 Which allow us to update θ through gradient ascent (since we want to maximaze a likelihood value). Updates in θ are given by Stochastic Gradient Ascent:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554986.png"></p>
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615554991.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113066968-db45c400-9191-11eb-844c-b68c607d3260.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113065868-eef02b00-918f-11eb-8058-0c1658ea0151.png"></p>
 
 ### Decision Boundary
 The Decision Boundary is a line which separates the categories of data. It is indepedent of the dataset and rely only on the parameters θ. In binary classification is formaly defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556494.png"></p>
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615556282.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113066286-abe28780-9190-11eb-8aa6-789fbf242937.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113066336-c1f04800-9190-11eb-84cf-b1abef2014ab.png"></p>
 
 Because (Condition).
 
