@@ -31,7 +31,7 @@ In this approach, each value of θj is evaluated individually at each *j-th* ite
 ## Stochastic Gradient Descent
 The formula used for this second approach was also derived from the notes and is defined as follow:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615044029.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113055874-78e4c780-9181-11eb-9a76-f3ae87848663.png"></p>
 
 The main difference is that, when updating θj, only one data point from the training set is consider in the calculation at each iteration, whereas in Batch Gradient Descent, every data point was added up at each iteration. One might consider the stochastic approach when dealing with huge data sets, because in a scenario like this, Batch Gradient Descent becomes inviable due to the amount of time the algorithm would consume.
 
