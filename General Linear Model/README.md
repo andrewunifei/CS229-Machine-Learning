@@ -4,7 +4,7 @@ Based on notes from lecture 4 of the course [Stanford CS229: Machine Learning | 
 ## The exponential family
 In order to explore the ideia of General Linear Model (GLM), it is first necessary to describe the notion of exponential family distributions. The exponential family is constituted by members. A member of the exponential family is a class distributions that has a structure defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1616606017.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113068103-fe717300-9193-11eb-8d59-13c476c4eb2d.png"></p>
 
 Where η is the **natural parameter** or **canonical parameter**, T(y) is the **sufficient statistic**, a(η) is the **log partition function** and exp(-a(η)) has a function of **normalization**. Choosing T, a and b determine a family of distributions parameterized by η.
 
