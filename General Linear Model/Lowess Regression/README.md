@@ -13,15 +13,15 @@ Locally Weighted Regression is the task of modeling a linear function to a parti
 
 The formula used to implement this algorithm is defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615380331.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113067859-8a36cf80-9193-11eb-84c7-6e6b5aeace00.png"></p>
 
 Where W is defined as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615381125.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113067803-6ecbc480-9193-11eb-9cca-4603c27d2d6b.png"></p>
 
 And w^(i) as:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615381386.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113067811-725f4b80-9193-11eb-99d9-869670470f26.png"></p>
 
 The snippet of code that implements those formulas is as follows:
 
