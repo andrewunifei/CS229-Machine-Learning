@@ -10,7 +10,7 @@ Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | 
 ## Batch Gradient Descent
 The formula used for this first approach was derived from the notes and is the following:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615042970.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113063569-e85fb480-918b-11eb-98c2-11e04e56a990.png"></p>
 
 Where θj, the parameters of a linear combination (otherwise known as weights), is subsequently updated based on a sum of an "actual value" y^(i) minus a "predicted value" hθ(x^(i)) times a particular feature xj^(i) weighted by a learning rate α. Iteration occurs until θj converge. The term with Σ is the gradient of a cost function J(θ).
 
@@ -62,7 +62,7 @@ My idea is to explore different implementations of gradient descent. In contrast
 ## Normal Equation
 The idea behind this approach is to set ∇J(θ) to 0, because the local minimum is a point where the value of gradient is zero. After working algebraically from this, we reach the following formula:
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615376864.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113063612-fe6d7500-918b-11eb-99d1-bed7fcef2bb5.png"></p>
 
 This method doesn't rely on any iteration, evaluation of parameters' values occur executing a single operation.
 
@@ -107,11 +107,11 @@ This method returns only one set of thetas which are already suited.
 ### Data with multiple features
 The two previous examples dealt with *x* having only one feature, therefore, the hypothetical linear function had the form
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045196.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113063650-0cbb9100-918c-11eb-9388-01b4115d9a0c.png"></p>
 
 The function expressed a 2-dimensional geometry. But, those same algorithms can also deal with more features, therefore more dimensions. In the following case, with a dummy training dataset, the hypothetical function is defined as
 
-<p align="center"><img src="http://www.sciweavers.org/download/Tex2Img_1615045238.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113063675-1513cc00-918c-11eb-9d97-329301441a7d.png"></p>
 
 It can model data dispersed in a 3-dimensional line, but the same parameters also define a plane:
 
