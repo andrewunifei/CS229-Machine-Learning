@@ -9,3 +9,4 @@ All sections contains README.md files that define and explore a particular topic
   + [Logistic Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression)
     - [Binary (Binomial)](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Binomial)
     - [Multiclass (Multinomial)](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Logistic%20Regression/Multinomial)
+  + [Poisson Regression](https://github.com/andrewunifei/CS229-Machine-Learning/tree/main/General%20Linear%20Model/Poisson%20Regression)
