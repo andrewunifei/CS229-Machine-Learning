@@ -8,7 +8,7 @@ import numpy as np
 from numpy.linalg import inv
 from sklego.linear_model import LowessRegression
 
-class Linear():
+class LowessRegression():
     def __init__(self, X: object, y: object, tau: float) -> None:
         self.raw_X = X
         self.X = self.__preprocessing()
@@ -34,7 +34,7 @@ class Linear():
         '''
         return np.exp(-(np.sum((self.X[i] - x)**2))/(2*tau**2))
 
-    def locally_weighted(self, x: object) -> object:
+    def fit(self, x: object) -> object:
         '''
         Function that utilizes the method of locally weighted regression through normal equation
         to evaluate the parameters (otherwise known as weights) of a linear function
