@@ -59,6 +59,8 @@ def stochastic_gradient_descent(self) -> None:
 
 My idea is to explore different implementations of gradient descent. In contrast with the batch one, in this case I chose to update every θj at the same *i-th* iteration, so they are evaluated almost at the same time. The condition defined to stop the iteration was to verify if every step taken in each calculation of the parameters were less than 0.0001 or if a maximum number 1000 of steps were reached.
 
+Furthermore, I'm aware that this implementation express a complexity of O(n^3), but my aim here is not to implement the most efficient algorithm, rather to explore conceptually how the algorithm function.
+
 ## Normal Equation
 The idea behind this approach is to set ∇J(θ) to 0, because the local minimum is a point where the value of gradient is zero. After working algebraically from this, we reach the following formula:
 
