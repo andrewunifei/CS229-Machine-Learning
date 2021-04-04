@@ -44,3 +44,9 @@ When dealing with a regression or classification problem, where one needs to pre
 1. The distribution of y, given x and set of parameters θ, is a member of the exponential family.
 2. In these types of problems, T(y) = y, therefore the objetive is to predict T(y) given x.
 3. There is a linear relation between η and set of features x expressed as η = θ^Tx.
+
+Generally a General Linear Model learning algorithm will have the following structure:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113524827-ae295500-9587-11eb-95eb-3e332de70d32.png"></p>
+
+Differing only the **hypothesis function** h(x).
