@@ -7,13 +7,17 @@ Based on notes from lecture 2 of the course [Stanford CS229: Machine Learning | 
 [matplotlib](https://matplotlib.org/)</br>
 [numpy](https://numpy.org/)
 
+## Hypothesis function
+In all formulas a hypothesis function h(x) appears. This hypothesis function in defined as a linear combination of features x and coefficients θ:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/29299799/113525138-a074cf00-9589-11eb-84d6-4c00da3f9b7d.png"></p>
+
 ## Batch Gradient Descent
 The formula used for this first approach was derived from the notes and is the following:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/29299799/113063569-e85fb480-918b-11eb-98c2-11e04e56a990.png"></p>
 
 Where θj, the parameters of a linear combination (otherwise known as weights), is subsequently updated based on a sum of an "actual value" y^(i) minus a "predicted value" hθ(x^(i)) times a particular feature xj^(i) weighted by a learning rate α. Iteration occurs until θj converge. The term with Σ is the gradient of a cost function J(θ).
-
 
 The snippet of code that implements the aforementioned formula is defined as:
 
