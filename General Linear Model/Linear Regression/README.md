@@ -82,6 +82,8 @@ def normal_equation(self) -> object:
         return np.array([theta])
 ```
 
+It is important to state that this method only works in the context of Linear Regression.
+
 ## Scikit-learn
 I also approach linear regression using the library scikit-learn:
 ```python
